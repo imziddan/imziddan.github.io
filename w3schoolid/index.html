@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: white;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    margin-right: 20px;
+}
+
+.dropbtn{
+    color: #333;
+    background-color: white;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-drop{
+    position: relative;
+    display: inline-block;
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover {background-color: #f1f1f1}
+
+.menu-drop:hover .menu{
+    display: flex;
+}
+
+.dropbtn:hover{
+    color: white;
+    background-color: #059862;
+}
+
+.login{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+.login button{
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #04AA6D;
+    padding: 12px 40px;
+    border-radius: 50px;
+}
+
+.login button:hover{
+    background-color: #059862;
+}
+
+/* Jumbotron Layout */
+
+.jumbotron{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #282A35;
+}
+
+.page1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2{
+    width: 100%;
+}
+
+.koding{
+    color: #282A35;
+    min-width: 300px;
+    margin: 0 20px;
+    height: 300px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.tab{
+    margin-left: 50px;
+}
+
+.kotak-kode{
+    padding: 5px;
+    height: 55%;
+    line-height: 110%;
+    background-color: white;
+    overflow: scroll;
+}
+
+.try{
+    color: white;
+    background-color: #04AA6D;
+}
+
+.try:hover{
+    background-color: #059862;
+}
+
+.isi-jumbotron{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    line-height: 400%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-jumbotron h1{
+    font-size: 50px;
+}
+
+.isi-jumbotron button{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    width: 200px;
+    padding: 12px 0;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.belajar-html{
+    color: white;
+    background-color: #04AA6D;
+}
+
+.belajar-html:hover{
+    background-color: #059862;
+}
+
+.video-html{
+    background-color: #FFF4A3;
+}
+
+.video-html:hover{
+    background-color: #fff080;
+}
+
+.ref-html:hover{
+    background-color: #e7e9eb;
+}
+
+/* Jumbotron Css */
+
+.jumbotron-css{
+    color: #282A35;
+    background-color: #d9eee1;
+}
+
+.belajar-css{
+    color: white;
+    background-color: #04AA6D;
+}
+
+.belajar-css:hover{
+    background-color: #059862;
+}
+
+.ref-css{
+    background-color: #282A35;
+    color: white;
+}
+
+.ref-css:hover{
+    background-color: black;
+}
+
+.jumbotron-js{
+    color: #282A35;
+    background-color: #FFF4A3;
+}
+
+.belajar-js{
+    color: white;
+    background-color: #04AA6D;
+}
+
+.belajar-js:hover{
+    background-color: #059862;
+}
+
+.ref-js{
+    background-color: #282A35;
+    color: white;
+}
+
+.ref-js:hover{
+    background-color: #000;
+}
+
+
+
+
+/*media queries */
+
+@media only screen and (min-width: 900px){
+    .isi-jumbotron{
+        flex-direction: row;
+    }
+
+    .koding{
+        max-width: 600px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/816px-W3Schools_logo.svg.png" width="50px" alt="" srcset="">
+        <div class="menu-drop">
+            <button class="dropbtn">Menu</button>
+            <div class="menu">
+                <a href="#">Coming Soon</a>
+                <a href="#">Coming Soon</a>
+                <a href="#">Coming Soon</a>
+            </div>
+        </div>
+        <div class="login">
+            <button>Masuk</button>
+        </div>
+    </header>
+    <div class="jumbotron">
+        <div class="isi-jumbotron">
+            <div class="page1">
+                <h1>HTML</h1>
+                <h4>Bahasa Untuk Membuat Halaman Web</h4>
+                <button class="belajar-html">Belajar HTML</button>
+                <button class="video-html">Video Tutorial</button>
+                <button class="ref-html">Referensi HTML</button>
+            </div>
+            <div class="page2">
+                <div class="koding koding-html">
+                    <h2>Contoh HTML :</h2>
+                    <div class="kotak-kode">
+                        &lt;DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;title&gt;HTML Tutorial&lt;title&gt;<br>
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;This s a heading&lt;h1&gt;<br>
+                        &lt;p&gt;This s a paragraph&lt;p&gt;<br><br>
+                        &lt;body&gt;<br>
+                        &lt;html&gt;<br>
+    
+                    </div>
+                    <button class="try" onclick="window.location.href='https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default';">Cobalah Sendiri</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-css">
+        <div class="isi-jumbotron ">
+            <div class="page1">
+                <h1>CSS</h1>
+                <h4>Bahasa Untuk Menata Halaman Web</h4>
+                <button class="belajar-css">Belajar CSS</button>
+                <button class="ref-css">Referensi CSS</button>
+            </div>
+            <div class="page2">
+                <div class="koding koding-css">
+                    <h2>Contoh CSS</h2>
+                    <div class="kotak-kode">
+                        <p>body {</p>
+                        <p class="tab">background-color: lightblue;</p>
+                        <p>}</p>
+                        <br>
+                        <p>h1 {</p>
+                        <p class="tab">color: white;<br>text-align: center;</p>
+                        <p>}</p>
+                    </div>
+                    <button class="try" onclick="window.location.href='https://www.w3schools.com/css/tryit.asp?filename=trycss_default'">Cobalah Sendiri</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-js">
+        <div class="isi-jumbotron">
+            <div class="page1">
+                <h1>JavaScript</h1>
+                <h4>Bahasa Untuk Memprogram Halaman Web</h4>
+                <button class="belajar-js">Belajar JavaScript</button>
+                <button class="ref-js">Referensi JavaScript</button>
+            </div>
+            <div class="page2">
+                <div class="koding koding-js">
+                    <h2>Contoh JavaScript</h2>
+                    <div class="kotak-kode">
+                        &lt;button onclick="myFunction()"&gt;Click Me!&lt;button&gt;
+                        <br>
+                        <br>
+                        &lt;script&gt;
+                        <p>function myFunction() {</p>
+                        <p class="tab">let x = document.getElementById("demo");<br>x.style.fontSize = "25px";<br>x.style.color = "red";</p>
+                        <p>}</p>
+                        &lt;script&gt;
+                    </div>
+                    <button class="try" onclick="window.location.href='https://www.w3schools.com/js/tryit.asp?filename=tryjs_default'">Cobalah Sendiri</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron" style="display: flex; align-items: center; justify-content: center; flex-direction: column;padding: 20px;">
+        <h1 style="text-align: center;">BANGKE BET, UDAH LAMA LAMA NGODING<br>TERNYATA SITUS W3SCHOOLNYA ADA OPSI TERJEMAHKAN
+        </h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <P>NGODING = NGOCOK STANDING</P>
+    </div>
+</body>
+</html>
